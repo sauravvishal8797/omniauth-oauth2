@@ -83,7 +83,7 @@ module OmniAuth
     protected
 
       def build_access_token
-        client.get_token(token_params.to_hash(:symbolize_keys => true))
+        client.get_token(token_params.to_hash)
       end
 
       def deep_symbolize(options)
